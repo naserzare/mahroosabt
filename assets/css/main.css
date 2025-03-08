@@ -1,10 +1,9 @@
-/**
-* Template Name: BizLand
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
+/* =======================================================
+* Template Name: XialTemplate
+* Updated: Mar 08 2025 with Bootstrap v5.3.3
+* Author: Alireza Naserzare
 * License: https://bootstrapmade.com/license/
-*/
+======================================================== */
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -12,9 +11,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Montserrat",  sans-serif;
-  --nav-font: "Open Sans",  sans-serif;
+  --default-font: "Vazirmatn",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Vazirmatn";
+  --nav-font: "Vazirmatn";
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -61,6 +60,7 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
+  direction: rtl;
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
@@ -164,7 +164,7 @@ h6 {
 
 .header .topbar .contact-info i a,
 .header .topbar .contact-info i span {
-  padding-left: 5px;
+  padding-right: 5px;
   color: var(--contrast-color);
 }
 
@@ -519,11 +519,11 @@ h6 {
   border: 0;
   font-size: 16px;
   padding: 0 20px;
-  margin: -7px -8px -7px 0;
+  margin: -7px 0px -7px -8px;
   background: var(--accent-color);
   color: var(--contrast-color);
   transition: 0.3s;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .footer .footer-newsletter .newsletter-form input[type=submit]:hover {
@@ -544,7 +544,7 @@ h6 {
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-right: 10px;
+  margin-left: 10px;
   transition: 0.3s;
 }
 
@@ -571,7 +571,7 @@ h6 {
 }
 
 .footer .footer-links ul i {
-  margin-right: 3px;
+  margin-left: 3px;
   font-size: 12px;
   line-height: 0;
   color: var(--accent-color);
@@ -1051,7 +1051,7 @@ section,
   width: 64px;
   height: 64px;
   font-size: 24px;
-  margin-right: 15px;
+  margin-left: 15px;
   color: var(--accent-color);
   border-radius: 50px;
 }
@@ -1090,7 +1090,7 @@ section,
 }
 
 .skills .progress .skill .val {
-  float: right;
+  float: left;
   font-style: normal;
 }
 
@@ -1749,7 +1749,7 @@ section,
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .contact .info-item h3 {
@@ -1953,4 +1953,8 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.custom-ltr {
+  direction: ltr !important;
 }
